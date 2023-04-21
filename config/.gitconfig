@@ -1,0 +1,11 @@
+[alias]
+  ad = add
+  ada = add -A
+  br = branch -v --sort=committerdate
+  cm = commit
+  co = checkout
+  l = log --graph
+  st = status
+[user]
+  name = Josh Eilers
+  email = eilers.joshua@gmail.com
