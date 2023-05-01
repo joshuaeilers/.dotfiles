@@ -8,6 +8,10 @@ set -e -o pipefail
   eval "$(/opt/homebrew/bin/brew shellenv)" &&\
   brew bundle install --file=./config/Brewfile
 
+# open jdk
+
+sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+
 # fzf: https://github.com/junegunn/fzf
 
 /opt/homebrew/opt/fzf/install
