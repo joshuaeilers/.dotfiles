@@ -46,7 +46,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # powerline
 
-export POWERLINE_LOCATION=/opt/homebrew/lib/python3.11/site-packages/powerline
+export POWERLINE_LOCATION=/opt/homebrew/lib/python3.10/site-packages/powerline
 powerline-daemon -q
 source $POWERLINE_LOCATION/bindings/zsh/powerline.zsh
 
