@@ -1425,7 +1425,7 @@
 											<string>$$</string>
 										</dict>
 										<key>Working Directory</key>
-										<string>/Users/je/.dotfiles</string>
+										<string>/Users/je</string>
 										<key>Working Directory Poller Disabled</key>
 										<false/>
 									</dict>

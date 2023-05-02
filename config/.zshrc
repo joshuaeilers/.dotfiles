@@ -44,9 +44,15 @@ bindkey "^R" history-incremental-search-backward
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# python
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # powerline
 
-export POWERLINE_LOCATION=/opt/homebrew/lib/python3.10/site-packages/powerline
+export POWERLINE_LOCATION=~/.pyenv/versions/3.10.11/lib/python3.10/site-packages/powerline
 powerline-daemon -q
 source $POWERLINE_LOCATION/bindings/zsh/powerline.zsh
 

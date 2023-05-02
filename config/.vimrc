@@ -30,9 +30,6 @@ set nowritebackup
 nnoremap q <nop>
 nnoremap <s-k> <nop>
 
-" Make it easier to get into directory view
-nnoremap <c-d> :Rexplore<cr><c-l>
-
 " Navigate splits with ctrl-{h,k,j,l}
 nnoremap <C-h> <C-w>h
 nnoremap <C-k> <C-w>k

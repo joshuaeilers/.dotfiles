@@ -8,6 +8,14 @@ set -e -o pipefail
   eval "$(/opt/homebrew/bin/brew shellenv)" &&\
   brew bundle install --file=./config/Brewfile
 
+# python
+
+pyenv install 3.10.11
+
+# java
+
+sudo ln -sfn /opt/homebrew/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+
 # fzf: https://github.com/junegunn/fzf
 
 /opt/homebrew/opt/fzf/install
@@ -25,10 +33,6 @@ defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false ||
 defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false || true   # For VS Codium Exploration users
 defaults delete -g ApplePressAndHoldEnabled || true                                           # If necessary, reset global default
 set -e
-
-# powerline: https://powerline.readthedocs.io
-
-pip3 install powerline-status
 
 # nvim setup
 
